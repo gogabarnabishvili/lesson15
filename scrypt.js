@@ -1,23 +1,3 @@
-// const btnChanege = document.getElementById("allBtn");
-// const activePageChange = document.getElementById("activeBtn");
-// const completedPageChange = document.getElementById("CompletedBtn");
-
-// const chagePage = function(event) {
-//     event.target.className.toggle = ("active");
-//     if (event.className === "active") {
-//         event.target.className.toggle = ("activeOff");
-//     } else {
-
-//         event.target.className = "active"
-//     }
-
-// }
-
-
-// btnChanege.addEventListener("click", chagePage);
-// activePageChange.addEventListener("click", chagePage);
-// completedPageChange.addEventListener("click", chagePage);
-
 const allPageChange = document.getElementById("allBtn");
 const activePageChange = document.getElementById("activeBtn");
 const completedPageChange = document.getElementById("CompletedBtn");
@@ -45,13 +25,9 @@ function completedPage() {
     window.location.href = "complete.html";
 }
 
-
-const btn5 = document.querySelector(".btn5")
-
 const inputForm = document.getElementById("addForm");
 const inputValue = inputForm[0];
 const addInfo = document.querySelector(".addUl")
-
 
 inputForm.addEventListener("submit", (e) => {
 
@@ -60,9 +36,6 @@ inputForm.addEventListener("submit", (e) => {
     const addinput = document.createElement('input');
     const addlabel = document.createElement('label');
     addinput.type = "checkbox"
-
-
-
 
     addInfo.appendChild(addLi);
     addLi.appendChild(addinput);
@@ -76,17 +49,10 @@ inputForm.addEventListener("submit", (e) => {
             addlabel.style.textDecoration = "line-through";
             addlabel.style.color = "green";
 
-
-
-
-
-            // location.replace("complete.html")
-
         } else {
             addlabel.style.textDecoration = "none";
             addlabel.style.color = "none";
-            // location.replace("active.html")
         }
     })
-
+    inputValue.value = ""
 });
