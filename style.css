@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 600px;
+}
+
+header {
+    justify-content: center;
+    margin: 32px 0 58px 0;
+}
+
+.navUl {
+    width: 100%;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.navUl button {
+    border: none;
+    cursor: pointer;
+}
+
+.navUl li {
+    position: relative;
+}
+
+.navUl button::after {
+    font-size: 14px;
+}
+
+.active::after {
+    position: absolute;
+    content: '';
+    top: 24px;
+    left: -33px;
+    height: 5px;
+    width: 89px;
+    transition: 0.5;
+    background-color: #2F80ED;
+    border-radius: 4px 4px 0 0;
+}
+
+.activeOff {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    transition: 0.5;
+    background-color: none;
+    border-radius: 0;
+}
+
+.addDetails {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.addDetails input {
+    width: 476px;
+    height: 56px;
+    border-radius: 12px;
+    border: 1px solid #BDBDBD;
+    padding-left: 12px;
+    justify-content: space-evenly;
+}
+
+.addDetails button {
+    width: 109px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #2F80ED;
+    cursor: pointer;
+}
+
+.addUl {
+    width: 600px;
+    margin: 33px 0;
+    font-size: 18px;
+    align-items: center;
+    flex-direction: column;
+}
